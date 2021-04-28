@@ -5,6 +5,7 @@ Foreach ($i in $users) {
     $sam_name = $i.FirstName.ToLower()[0]+$i.LastName.ToLower()
     $upn_name = $i.FirstName.ToLower()+"."+$i.LastName.ToLower()+"@contoso.com"
     # to rozwiązanie nie jest dobre dla zagnieżdzeń ou
+    # test czy dziala
     $path = "ou="+$i.Department+",dc=contoso,dc=com"
     $passwd = "P@ssword901"
 
