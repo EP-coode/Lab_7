@@ -1,9 +1,9 @@
-FullPath
-C:\company_data
-C:\company_data\Faktury i paragony
-C:\company_data\Formularze do druku
-C:\company_data\Umowy
-C:\company_data\Raporty
-C:\company_data\Raporty\Inwentaryzacja
-C:\company_data\Raporty\Wypłaty
-C:\company_data\Raporty\Serwis i Dokumentacje
+FullPath,FullC1
+company_data,C:\company_data,
+Faktury i paragony,C:\company_data\Faktury i paragony,G_Biuro rachunkowe
+Formularze do druku,C:\company_data\Formularze do druku,G_Administracja Hr
+G_Administracja Hr,C:\company_data\Umowy,G_Administracja Hr
+Raporty,C:\company_data\Raporty,
+Inwentaryzacja,C:\company_data\Raporty\Inwentaryzacja,G_Magazyn
+Wypłaty,C:\company_data\Raporty\Wypłaty,G_Biuro rachunkowe
+Serwis i Dokumentacje,C:\company_data\Raporty\Serwis i Dokumentacje,G_IT Technicy
