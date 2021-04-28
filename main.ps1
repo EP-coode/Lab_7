@@ -35,14 +35,9 @@ Foreach ($i in $users) {
 
 foreach ($i in $folders) {
     New-Item -ItemType Directory -Path $i.FullPath
-    if($i.FullC1) {
-        New-SMBShare -Path $i.FullPath -FullAccess $1.FullC1
-    }
-
-    
-    $Acl = Get-Acl $i
-    $Ar = New-Object System.Security.AccessControl.FileSystemAccessRule("user", "FullControl", "ContainerInherit,ObjectInherit", "None", "Allow")
-    $Acl.SetAccessRule($Ar)
-    Set-Acl "\\R9N2WRN\Share" $Acl
+    # to nie działa
+    # if(!$i.FullC1) {
+    #     New-SMBShare -Name $i.FolderName -Path $i.FullPath -FullAccess $1.FullC1
+    # }
 }
 New-SmbShare -Name $shareName -Path $rootDir -ReadAccess EveryOne
